@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Module 03.60</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="password-container">
+        <div class="console-meta" aria-hidden="true">
+            <span class="system-signature"><span class="system-led"></span> Portable System / 03.60</span>
+        </div>
+        <h2>Password Generator</h2>
+        <div class="input-container">
+            <input type="text"
+            id="input"
+            class="input"
+            placeholder="Create a password"
+            aria-label="Generated password"
+            readonly>
+            <button class="copy-btn" type="button" aria-label="Copy password" title="Copy password">
+                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+        </div>
+        <button class="btn" id="generate" type="button">
+            <i class="fa-solid fa-play" aria-hidden="true"></i>
+            Generate
+        </button>
+    </main>
+    <div class="alert-container active" role="status" aria-live="polite">Password was copied</div>
+    <script src="index.js"></script>
+</body>
+</html>
